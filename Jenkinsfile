@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
                sh 'echo "Hello World"' 
-               sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+               sh 'echo "Build Complete"'
             }
         }
     }
